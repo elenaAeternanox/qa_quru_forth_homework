@@ -1,0 +1,2 @@
+- Is there a difference between $("h1 div"); and $("h1").$("div")? Could you give an example?
+No, in both cases the first child div in h1 will be found.
