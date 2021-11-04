@@ -13,7 +13,8 @@ public class DragAndDropTest {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         // Move the rectangle A to place of the rectangle B
         $("#column-a").dragAndDropTo($("#column-b"));
-        //Check: A and B have they swapped places
+        // Check: A and B have they swapped places
         $("#column-a").shouldHave(text("B"));
+        $("#column-b").shouldHave(text("A"));
     }
 }
